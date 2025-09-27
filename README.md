@@ -1,54 +1,54 @@
-[![AutoCode.Click: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://autocode.click)
+[![Abalon.Click: توسعه وب فول‌استک با هوش مصنوعی در مرورگر](./public/social_preview_index.jpg)](https://abalon.click)
 
-# AutoCode.Click: AI-Powered Full-Stack Web Development in the Browser
+# Abalon.Click: توسعه وب فول‌استک با هوش مصنوعی در مرورگر
 
-AutoCode.Click is an AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly from your browser—no local setup required. If you're here to build your own AI-powered web dev agent using the AutoCode.Click open source codebase, [click here to get started!](./CONTRIBUTING.md)
+Abalon.Click یک ابزار توسعه وب مبتنی بر هوش مصنوعی است که به شما امکان ایجاد، اجرا، ویرایش و استقرار اپلیکیشن‌های فول‌استک را مستقیماً از مرورگر می‌دهد—بدون نیاز به تنظیمات محلی. اگر اینجا هستید تا ابزار توسعه وب مبتنی بر هوش مصنوعی خود را با استفاده از کدبیس متن‌باز Abalon.Click بسازید، [اینجا کلیک کنید تا شروع کنید!](./CONTRIBUTING.md)
 
-## What Makes AutoCode.Click Different
+## چه چیزی Abalon.Click را متفاوت می‌کند
 
-Claude, v0, etc are incredible- but you can't install packages, run backends or edit code. That's where AutoCode.Click stands out:
+Claude، v0 و غیره فوق‌العاده هستند - اما نمی‌توانید پکیج نصب کنید، بک‌اند اجرا کنید یا کد ویرایش کنید. اینجاست که Abalon.Click متمایز می‌شود:
 
-- **Full-Stack in the Browser**: AutoCode.Click integrates cutting-edge AI models with an in-browser development environment powered by **StackBlitz's WebContainers**. This allows you to:
-  - Install and run npm tools and libraries (like Vite, Next.js, and more)
-  - Run Node.js servers
-  - Interact with third-party APIs
-  - Deploy to production from chat
-  - Share your work via a URL
+- **فول‌استک در مرورگر**: Abalon.Click مدل‌های هوش مصنوعی پیشرفته را با محیط توسعه درون مرورگر که توسط **WebContainers StackBlitz** قدرت گرفته، ادغام می‌کند. این به شما امکان می‌دهد:
+  - ابزارها و کتابخانه‌های npm (مانند Vite، Next.js و موارد دیگر) را نصب و اجرا کنید
+  - سرورهای Node.js را اجرا کنید
+  - با APIهای شخص ثالث تعامل کنید
+  - از چت به محیط تولید استقرار دهید
+  - کار خود را از طریق URL به اشتراک بگذارید
 
-- **AI with Environment Control**: Unlike traditional dev environments where the AI can only assist in code generation, AutoCode.Click gives AI models **complete control** over the entire  environment including the filesystem, node server, package manager, terminal, and browser console. This empowers AI agents to handle the entire app lifecycle—from creation to deployment.
+- **هوش مصنوعی با کنترل محیط**: برخلاف محیط‌های توسعه سنتی که هوش مصنوعی فقط می‌تواند در تولید کد کمک کند، Abalon.Click به مدل‌های هوش مصنوعی **کنترل کامل** بر کل محیط از جمله فایل سیستم، سرور node، مدیر پکیج، ترمینال و کنسول مرورگر می‌دهد. این امر ابزارهای هوش مصنوعی را قادر می‌سازد تا کل چرخه حیات اپلیکیشن را از ایجاد تا استقرار مدیریت کنند.
 
-Whether you're an experienced developer, a PM or designer, AutoCode.Click allows you to build production-grade full-stack applications with ease.
+چه توسعه‌دهنده باتجربه، مدیر محصول یا طراح باشید، Abalon.Click به شما امکان ساخت اپلیکیشن‌های فول‌استک درجه تولید را با سهولت می‌دهد.
 
-For developers interested in building their own AI-powered development tools with WebContainers, check out the open-source AutoCode.Click codebase in this repo!
+برای توسعه‌دهندگانی که علاقه‌مند به ساخت ابزارهای توسعه مبتنی بر هوش مصنوعی خود با WebContainers هستند، کدبیس متن‌باز Abalon.Click را در این مخزن بررسی کنید!
 
-## Tips and Tricks
+## نکات و ترفندها
 
-Here are some tips to get the most out of AutoCode.Click:
+در اینجا چند نکته برای بهره‌گیری بهتر از Abalon.Click آورده شده:
 
-- **Be specific about your stack**: If you want to use specific frameworks or libraries (like Astro, Tailwind, ShadCN, or any other popular JavaScript framework), mention them in your initial prompt to ensure AutoCode.Click scaffolds the project accordingly.
+- **در مورد استک خود مشخص باشید**: اگر می‌خواهید از فریمورک‌ها یا کتابخانه‌های خاص (مانند Astro، Tailwind، ShadCN یا هر فریمورک محبوب JavaScript دیگر) استفاده کنید، آن‌ها را در پرامپت اولیه خود ذکر کنید تا اطمینان حاصل کنید که Abalon.Click پروژه را بر اساس آن‌ها راه‌اندازی می‌کند.
 
-- **Use the enhance prompt icon**: Before sending your prompt, try clicking the 'enhance' icon to have the AI model help you refine your prompt, then edit the results before submitting.
+- **از آیکون بهبود پرامپت استفاده کنید**: قبل از ارسال پرامپت، سعی کنید روی آیکون 'بهبود' کلیک کنید تا مدل هوش مصنوعی به شما کمک کند پرامپت خود را بهبود دهید، سپس نتایج را قبل از ارسال ویرایش کنید.
 
-- **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps AutoCode.Click understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
+- **ابتدا اصول اولیه را راه‌اندازی کنید، سپس ویژگی‌ها را اضافه کنید**: مطمئن شوید که ساختار اساسی اپلیکیشن شما قبل از پرداختن به عملکردهای پیشرفته‌تر در جای خود قرار گرفته است. این به Abalon.Click کمک می‌کند تا پایه پروژه شما را درک کند و اطمینان حاصل کند که همه چیز قبل از ساخت عملکردهای پیشرفته‌تر به درستی متصل شده است.
 
-- **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask AutoCode.Click to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
+- **دستورالعمل‌های ساده را دسته‌بندی کنید**: با ترکیب دستورالعمل‌های ساده در یک پیام، وقت صرفه‌جویی کنید. به عنوان مثال، می‌توانید از Abalon.Click بخواهید که طرح رنگ را تغییر دهد، واکنش‌پذیری موبایل را اضافه کند و سرور dev را مجدداً راه‌اندازی کند، همه در یک بار که باعث صرفه‌جویی در وقت و کاهش قابل توجه مصرف اعتبار API می‌شود.
 
-## FAQs
+## سوالات متداول
 
-**Where do I sign up for a paid plan?**  
-AutoCode.Click is free to get started. If you need more AI tokens or want private projects, you can purchase a paid subscription in your [AutoCode.Click](https://autocode.click) settings, in the lower-left hand corner of the application. 
+**کجا برای طرح پولی ثبت‌نام کنم؟**  
+Abalon.Click برای شروع رایگان است. اگر به توکن‌های هوش مصنوعی بیشتر یا پروژه‌های خصوصی نیاز دارید، می‌توانید اشتراک پولی را در تنظیمات [Abalon.Click](https://abalon.click) خود، در گوشه پایین سمت چپ اپلیکیشن خریداری کنید.
 
-**What happens if I hit the free usage limit?**  
-Once your free daily token limit is reached, AI interactions are paused until the next day or until you upgrade your plan.
+**اگر به حد استفاده رایگان برسم چه اتفاقی می‌افتد؟**  
+پس از رسیدن به حد روزانه توکن رایگان، تعاملات هوش مصنوعی تا روز بعد یا تا زمانی که طرح خود را ارتقا دهید متوقف می‌شود.
 
-**Is AutoCode.Click in beta?**  
-Yes, AutoCode.Click is in beta, and we are actively improving it based on feedback.
+**آیا Abalon.Click در حالت بتا است؟**  
+بله، Abalon.Click در حالت بتا است و ما به طور فعال بر اساس بازخوردها آن را بهبود می‌دهیم.
 
-**How can I report AutoCode.Click issues?**  
-Check out the [Issues section](https://github.com/stackblitz/autocode.click/issues) to report an issue or request a new feature. Please use the search feature to check if someone else has already submitted the same issue/request.
+**چگونه می‌توانم مشکلات Abalon.Click را گزارش کنم؟**  
+بخش [Issues](https://github.com/stackblitz/abalon.click/issues) را بررسی کنید تا مشکل را گزارش دهید یا ویژگی جدیدی درخواست کنید. لطفاً از ویژگی جستجو استفاده کنید تا بررسی کنید آیا شخص دیگری همان مشکل/درخواست را ارسال کرده است یا نه.
 
-**What frameworks/libraries currently work on AutoCode.Click?**  
-AutoCode.Click supports most popular JavaScript frameworks and libraries. If it runs on StackBlitz, it will run on AutoCode.Click as well.
+**چه فریمورک‌ها/کتابخانه‌هایی در حال حاضر روی Abalon.Click کار می‌کنند؟**  
+Abalon.Click از اکثر فریمورک‌ها و کتابخانه‌های محبوب JavaScript پشتیبانی می‌کند. اگر روی StackBlitz اجرا شود، روی Abalon.Click نیز اجرا خواهد شد.
 
-**How can I add make sure my framework/project works well in AutoCode.Click?**  
-We are excited to work with the JavaScript ecosystem to improve functionality in AutoCode.Click. Reach out to us via [hello@stackblitz.com](mailto:hello@stackblitz.com) to discuss how we can partner!
+**چگونه می‌توانم مطمئن شوم که فریمورک/پروژه من در Abalon.Click به خوبی کار می‌کند؟**  
+ما مشتاق همکاری با اکوسیستم JavaScript برای بهبود عملکرد در Abalon.Click هستیم. از طریق [hello@stackblitz.com](mailto:hello@stackblitz.com) با ما تماس بگیرید تا در مورد نحوه شراکت صحبت کنیم!

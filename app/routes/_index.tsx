@@ -5,7 +5,7 @@ import { Chat } from '~/components/chat/Chat.client';
 import { Header } from '~/components/header/Header';
 
 export const meta: MetaFunction = () => {
-  return [{ title: 'AutoCode.Click' }, { name: 'description', content: 'Talk with AutoCode.Click, an AI assistant from StackBlitz' }];
+  return [{ title: 'Abalon.Click' }, { name: 'description', content: 'با Abalon.Click صحبت کنید، دستیار هوش مصنوعی از StackBlitz' }];
 };
 
 export const loader = () => json({});

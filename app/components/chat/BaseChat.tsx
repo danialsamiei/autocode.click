@@ -28,11 +28,11 @@ interface BaseChatProps {
 }
 
 const EXAMPLE_PROMPTS = [
-  { text: 'Build a todo app in React using Tailwind' },
-  { text: 'Build a simple blog using Astro' },
-  { text: 'Create a cookie consent form using Material UI' },
-  { text: 'Make a space invaders game' },
-  { text: 'How do I center a div?' },
+  { text: 'یک اپلیکیشن todo در React با استفاده از Tailwind بساز' },
+  { text: 'یک وبلاگ ساده با استفاده از Astro بساز' },
+  { text: 'یک فرم رضایت کوکی با Material UI ایجاد کن' },
+  { text: 'یک بازی space invaders بساز' },
+  { text: 'چگونه یک div را وسط قرار دهم؟' },
 ];
 
 const TEXTAREA_MIN_HEIGHT = 76;
@@ -73,11 +73,11 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
           <div className={classNames(styles.Chat, 'flex flex-col flex-grow min-w-[var(--chat-min-width)] h-full')}>
             {!chatStarted && (
               <div id="intro" className="mt-[26vh] max-w-chat mx-auto">
-                <h1 className="text-5xl text-center font-bold text-bolt-elements-textPrimary mb-2">
-                  Where ideas begin
+                <h1 className="text-5xl text-center font-bold text-bolt-elements-textPrimary mb-2" dir="rtl">
+                  جایی که ایده‌ها شروع می‌شوند
                 </h1>
-                <p className="mb-4 text-center text-bolt-elements-textSecondary">
-                  Bring ideas to life in seconds or get help on existing projects.
+                <p className="mb-4 text-center text-bolt-elements-textSecondary" dir="rtl">
+                  ایده‌ها را در چند ثانیه زنده کنید یا برای پروژه‌های موجود کمک بگیرید.
                 </p>
               </div>
             )}
@@ -131,6 +131,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                       maxHeight: TEXTAREA_MAX_HEIGHT,
                     }}
                     placeholder="How can Bolt help you today?"
+                    placeholder="امروز Abalon چگونه می‌تواند به شما کمک کند؟"
                     translate="no"
                   />
                   <ClientOnly>
@@ -152,7 +153,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   <div className="flex justify-between text-sm p-4 pt-2">
                     <div className="flex gap-1 items-center">
                       <IconButton
-                        title="Enhance prompt"
+                        title="بهبود پرامپت"
                         disabled={input.length === 0 || enhancingPrompt}
                         className={classNames({
                           'opacity-100!': enhancingPrompt,
@@ -164,19 +165,19 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                         {enhancingPrompt ? (
                           <>
                             <div className="i-svg-spinners:90-ring-with-bg text-bolt-elements-loader-progress text-xl"></div>
-                            <div className="ml-1.5">Enhancing prompt...</div>
+                            <div className="ml-1.5">در حال بهبود پرامپت...</div>
                           </>
                         ) : (
                           <>
                             <div className="i-bolt:stars text-xl"></div>
-                            {promptEnhanced && <div className="ml-1.5">Prompt enhanced</div>}
+                            {promptEnhanced && <div className="ml-1.5">پرامپت بهبود یافت</div>}
                           </>
                         )}
                       </IconButton>
                     </div>
                     {input.length > 3 ? (
                       <div className="text-xs text-bolt-elements-textTertiary">
-                        Use <kbd className="kdb">Shift</kbd> + <kbd className="kdb">Return</kbd> for a new line
+                        برای خط جدید از <kbd className="kdb">Shift</kbd> + <kbd className="kdb">Return</kbd> استفاده کنید
                       </div>
                     ) : null}
                   </div>

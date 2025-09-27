@@ -308,7 +308,7 @@ function newEditorState(
         {
           key: 'Mod-s',
           preventDefault: true,
-          run: () => {
+            divElement.textContent = 'نمی‌توان فایل را در حین تولید پاسخ هوش مصنوعی ویرایش کرد';
             onFileSaveRef.current?.();
             return true;
           },

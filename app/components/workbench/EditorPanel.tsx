@@ -130,7 +130,7 @@ export const EditorPanel = memo(
               <div className="flex flex-col border-r border-bolt-elements-borderColor h-full">
                 <PanelHeader>
                   <div className="i-ph:tree-structure-duotone shrink-0" />
-                  Files
+                  فایل‌ها
                 </PanelHeader>
                 <FileTree
                   className="h-full"
@@ -153,11 +153,11 @@ export const EditorPanel = memo(
                       <div className="flex gap-1 ml-auto -mr-1.5">
                         <PanelHeaderButton onClick={onFileSave}>
                           <div className="i-ph:floppy-disk-duotone" />
-                          Save
+                          ذخیره
                         </PanelHeaderButton>
                         <PanelHeaderButton onClick={onFileReset}>
                           <div className="i-ph:clock-counter-clockwise-duotone" />
-                          Reset
+                          بازنشانی
                         </PanelHeaderButton>
                       </div>
                     )}
@@ -224,7 +224,7 @@ export const EditorPanel = memo(
                 <IconButton
                   className="ml-auto"
                   icon="i-ph:caret-down"
-                  title="Close"
+                  title="بستن"
                   size="md"
                   onClick={() => workbenchStore.toggleTerminal(false)}
                 />
