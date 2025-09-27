@@ -1,4 +1,5 @@
 import { json, type MetaFunction } from '@remix-run/cloudflare';
+import { useEffect } from 'react';
 import { ClientOnly } from 'remix-utils/client-only';
 import { useState } from 'react';
 import { BaseChat } from '~/components/chat/BaseChat';
@@ -20,6 +21,13 @@ export default function Index() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showChat, setShowChat] = useState(false);
   const [userRole, setUserRole] = useState<string>('');
+
+  useEffect(() => {
+    console.log('Index page mounted');
+    console.log('isAuthenticated:', isAuthenticated);
+    console.log('showChat:', showChat);
+    console.log('userRole:', userRole);
+  }, [isAuthenticated, showChat, userRole]);
 
   // If user is authenticated and wants to use chat
   if (showChat && isAuthenticated) {
