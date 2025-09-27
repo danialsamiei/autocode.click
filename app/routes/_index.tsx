@@ -21,6 +21,7 @@ export default function Index() {
   const [showChat, setShowChat] = useState(false);
   const [userRole, setUserRole] = useState<string>('');
 
+  // If user is authenticated and wants to use chat
   if (showChat && isAuthenticated) {
     return (
       <div className="flex flex-col h-full w-full">
@@ -34,6 +35,7 @@ export default function Index() {
     );
   }
 
+  // If user is authenticated but hasn't started chat yet
   if (isAuthenticated && !showChat) {
     return (
       <div className="flex flex-col h-full w-full">
@@ -63,14 +65,11 @@ export default function Index() {
     );
   }
 
+  // Default homepage for non-authenticated users
   return (
     <div className="flex flex-col h-full w-full">
       <Header />
-      {!isAuthenticated ? (
-        <Homepage onLogin={() => setIsAuthenticated(true)} onSetUserRole={setUserRole} />
-      ) : (
-        <LoginForm onLogin={setIsAuthenticated} onSetUserRole={setUserRole} />
-      )}
+      <Homepage onLogin={() => setIsAuthenticated(true)} onSetUserRole={setUserRole} />
     </div>
   );
 }
