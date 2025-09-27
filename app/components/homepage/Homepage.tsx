@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useEffect } from 'react';
 import { LoginForm } from '../auth/LoginForm';
 
 interface HomepageProps {
@@ -9,11 +8,6 @@ interface HomepageProps {
 
 export function Homepage({ onLogin, onSetUserRole }: HomepageProps) {
   const [showLogin, setShowLogin] = useState(false);
-
-  useEffect(() => {
-    console.log('Homepage component mounted');
-    console.log('showLogin:', showLogin);
-  }, [showLogin]);
 
   if (showLogin) {
     return <LoginForm onLogin={onLogin} onSetUserRole={onSetUserRole} />;

@@ -1,7 +1,6 @@
 import { useStore } from '@nanostores/react';
 import type { LinksFunction } from '@remix-run/cloudflare';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
-import { useEffect } from 'react';
 import tailwindReset from '@unocss/reset/tailwind-compat.css?url';
 import { themeStore } from './lib/stores/theme';
 import { stripIndents } from './utils/stripIndent';
@@ -65,12 +64,6 @@ export const Head = createHead(() => (
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const theme = useStore(themeStore);
-
-  useEffect(() => {
-    console.log('Layout mounted, theme:', theme);
-    console.log('Children:', children);
-    document.body.style.minHeight = '100vh';
-  }, [theme, children]);
 
   useEffect(() => {
     document.querySelector('html')?.setAttribute('data-theme', theme);
