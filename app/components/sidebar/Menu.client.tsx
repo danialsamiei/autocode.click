@@ -135,7 +135,7 @@ export function Menu() {
             <Dialog onBackdrop={closeDialog} onClose={closeDialog}>
               {dialogContent?.type === 'delete' && (
                 <>
-                  <DialogTitle>Delete Chat?</DialogTitle>
+                  <DialogTitle dir="rtl">حذف گفتگو؟</DialogTitle>
                   <DialogDescription asChild>
                     <div>
                       <p>
