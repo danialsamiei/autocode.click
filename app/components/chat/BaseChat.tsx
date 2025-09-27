@@ -28,11 +28,11 @@ interface BaseChatProps {
 }
 
 const EXAMPLE_PROMPTS = [
-  { text: 'یک اپلیکیشن todo در React با استفاده از Tailwind بساز' },
-  { text: 'یک وبلاگ ساده با استفاده از Astro بساز' },
-  { text: 'یک فرم رضایت کوکی با Material UI ایجاد کن' },
-  { text: 'یک بازی space invaders بساز' },
-  { text: 'چگونه یک div را وسط قرار دهم؟' },
+  { text: 'یک اپلیکیشن مدیریت پروژه NoCode بساز' },
+  { text: 'یک داشبورد تحلیلی با LowCode ایجاد کن' },
+  { text: 'یک سیستم فروشگاهی ساده بساز' },
+  { text: 'یک اپلیکیشن چت بات هوشمند بساز' },
+  { text: 'یک سیستم مدیریت محتوا ایجاد کن' },
 ];
 
 const TEXTAREA_MIN_HEIGHT = 76;
